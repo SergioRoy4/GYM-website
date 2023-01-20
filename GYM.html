@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GYM</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        color: white;
+        margin: 15px;
+        padding: 0px;
+        background: url("img/bg.jpg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .left {
+        position: absolute;
+        left: 50px;
+        top: 20px;
+        display: inline-block;
+        /* border: 2px solid red; */
+    }
+
+    .left img {
+        width: 130px;
+    }
+
+    .left div {
+        text-align: center;
+        color: red;
+    }
+
+    .mid {
+        display: block;
+        width: 45%;
+        margin: 30px auto;
+        /* border: 6px solid #15ae67; */
+        border-radius: 40px;
+    }
+
+    .right {
+        position: absolute;
+        right: 50px;
+        top: 30px;
+        display: inline-block;
+        /* border: 2px solid blueviolet; */
+    }
+
+    .navbar {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 20px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: none;
+        color: #ff0000;
+    }
+
+    .btn {
+        margin: 4px 12px;
+        color: white;
+        background-color: black;
+        padding: 15px;
+        border: 10px;
+        border-radius: 20px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(38, 160, 99);
+    }
+
+    .container {
+        border: 10px solid #eb0909;
+        margin: 50px 40px;
+        padding: 24px;
+        width: 33%;
+        border-radius: 130px;
+    }
+
+    .container h1 {
+        text-align: center;
+        color: #5fe4e3;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 299px;
+        padding: 2px;
+        border: 3px solid #11db4a;
+        margin: 19px auto;
+        font-size: 25px;
+        border-radius: 20px;
+    }
+
+    .container button {
+        display: block;
+        width: 350px;
+        margin: auto;
+
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/3.jpg" alt="logo">
+            <div>OMF GYM</div>
+        </div>
+        <!-- Navigation bar here -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Center</a>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for Button -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Burdwan now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your weight">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your contact details">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
